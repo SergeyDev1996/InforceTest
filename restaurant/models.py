@@ -25,7 +25,6 @@ class Vote(models.Model):
     )
 
     def save(self, commit=True, *args, **kwargs):
-
         if commit:
             try:
                 self.restaurant.votes += 1

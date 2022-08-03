@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'restaurant',
-    'rest_framework'
+    'rest_framework',
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'restaurant_service.wsgi.application'
 
+AUTH_USER_MODEL = "user.Employee"
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
