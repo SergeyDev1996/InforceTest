@@ -2,10 +2,9 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from restaurant.views import MenuViewSet, RestaurantViewSet, VoteViewSet
+from restaurant.views import RestaurantViewSet, VoteViewSet
 
 router = routers.DefaultRouter()
-router.register("menu", MenuViewSet)
 router.register("restaurant", RestaurantViewSet)
 
 urlpatterns = [

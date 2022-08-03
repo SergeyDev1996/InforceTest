@@ -1,10 +1,6 @@
 from django.db import models, IntegrityError
 
 
-class Menu(models.Model):
-    menu_items = models.TextField()
-
-
 class Restaurant(models.Model):
     name = models.CharField(max_length=255)
     votes = models.IntegerField(default=0)
