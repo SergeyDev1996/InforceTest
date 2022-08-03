@@ -23,5 +23,3 @@ urlpatterns = [
     path('api/', include("restaurant.urls", namespace="restaurant")),
     path('api/user/', include('user.urls'))
 ]
-
-

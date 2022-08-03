@@ -4,13 +4,20 @@ from django.db import models, IntegrityError
 class Restaurant(models.Model):
     name = models.CharField(max_length=255)
     votes = models.IntegerField(default=0)
-    menu_monday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_tuesday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_wednesday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_thursday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_friday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_saturday = models.TextField(blank=True, default='Menu was not published yet')
-    menu_sunday = models.TextField(blank=True, default='Menu was not published yet')
+    menu_monday = models.TextField(blank=True,
+                                   default='Menu was not published yet')
+    menu_tuesday = models.TextField(blank=True,
+                                    default='Menu was not published yet')
+    menu_wednesday = models.TextField(blank=True,
+                                      default='Menu was not published yet')
+    menu_thursday = models.TextField(blank=True,
+                                     default='Menu was not published yet')
+    menu_friday = models.TextField(blank=True,
+                                   default='Menu was not published yet')
+    menu_saturday = models.TextField(blank=True,
+                                     default='Menu was not published yet')
+    menu_sunday = models.TextField(blank=True,
+                                   default='Menu was not published yet')
 
 
 class Vote(models.Model):
@@ -33,4 +40,3 @@ class Vote(models.Model):
                 raise IntegrityError
         else:
             raise IntegrityError
-

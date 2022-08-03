@@ -53,7 +53,8 @@ class VoteSerializer(serializers.Serializer):
     restaurant = serializers.CharField()
 
     def create(self, validated_data):
-        restaurant = get_object_or_404(Restaurant, name=validated_data["restaurant"])
+        restaurant = get_object_or_404(
+            Restaurant, name=validated_data["restaurant"])
         vote = Vote()
         vote.restaurant = restaurant
         try:
