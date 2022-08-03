@@ -40,7 +40,7 @@ docker-compose up
 
 * To vote for the restaurant: /api/vote/  :POST. You need to include {"name":"restaurant_name"} header to vote for the particular restaurant. As of now, 1 user can vote a few times.
 
-* To upload a menu for the restaurant: /api/vote/ :PATCH. You need to include {"restraunt_name":"menu_<day>"}({"restraunt_name":"menu_<monday>"} as example) to add a menu for the current day
+* To upload a menu for the restaurant: /api/vote/ :PATCH. You need to include {"restraunt_name":"menu_/day/"}({"restraunt_name":"menu_monday"} as example) to add a menu for the current day
 
 ## Other things you need to know
 * To get a menu of the restaurant for the current day, use :GET endpoint. The API will automatically choose a menu for today, if the one exists. 
