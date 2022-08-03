@@ -25,13 +25,14 @@ Docker should be installed
 docker-compose build
 docker-compose up
 ```
+## IMPORTANT
+* Please make sure to include "app-version: 1.0" or "app-version: 1.1" to your headers to access the api, otherwise it will not allow you to access any of the endpoints of the project. This is the requirement of the task.
 ## Creation of the user and access to the database
 
 * To register a user: /api/user/register/
 
 * To get access token: /api/user/token/
 * To manage a user: /api/user/me/
-* Please make sure to include "app-version: 1.0" or "app-version: 1.1" to your headers to access the api, otherwise it will not allow you to access any of the endpoints of the project. This is the requirement of the task.
 
 ## Other endpoints
 * To get a list of the restaurants: /api/restaurant/ : GET
