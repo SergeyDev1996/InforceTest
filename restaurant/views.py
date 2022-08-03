@@ -15,7 +15,6 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     serializer_class = RestaurantSerializer
 
     def dispatch(self, request, *args, **kwargs):
-        print(request.headers)
         if request.headers["app-version"] != "1.0"\
                 and request.headers["app-version"] != "1.1":
             raise PermissionDenied('The app version should be 1.0 or 1.1')

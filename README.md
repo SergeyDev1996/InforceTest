@@ -43,5 +43,5 @@ docker-compose up
 * To upload a menu for the restaurant: /api/vote/ :PATCH. You need to include {"restraunt_name":"menu_/day/"}({"restraunt_name":"menu_monday"} as example) to add a menu for the current day
 
 ## Other things you need to know
-* To get a menu of the restaurant for the current day, use :GET endpoint. The API will automatically choose a menu for today, if the one exists. 
+* To get a menu of the restaurant for the current day, use /api/restaurant/ :GET endpoint. The API will automatically choose a menu for today, if the one exists. 
 
